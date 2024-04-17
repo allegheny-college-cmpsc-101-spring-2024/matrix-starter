@@ -79,28 +79,12 @@ setup: |
         exact: false
 
 # run a command
-- description: Pass the source code formatting checks run by black
-  command: cd matrix && poetry run task black
-
-# run a command
-- description: Pass the linting checks run by flake8
-  command: cd matrix && poetry run task flake8
-
-# run a command
-- description: Pass the import checks run by isort
-  command: cd matrix && poetry run task isort
+- description: Pass the source code linting and formatting checks run by ruff
+  command: cd matrix && poetry run task ruff
 
 # run a command
 - description: Pass the linting checks run by mypy
   command: cd matrix && poetry run task mypy
-
-# run a command
-- description: Pass the linting checks run by pydocstyle
-  command: cd matrix && poetry run task pydocstyle
-
-# run a command
-- description: Pass the linting checks run by pylint
-  command: cd matrix && poetry run task pylint
 
 # run a command
 - description: Pass the linting checks run by pymarkdown

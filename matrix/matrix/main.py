@@ -24,7 +24,7 @@ def construct_matrix(matrix_contents: str) -> List[List[int]]:
 
 def print_matrix(matrix: List[List[int]]) -> None:
     """Display a matrix in the console in a formatted fashion."""
-    # TODO: Make sure that you understand how the tabulate package works
+    # Use the tabulate package
     print(tabulate(matrix))
 
 
